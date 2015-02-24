@@ -1,5 +1,5 @@
-source .plugins.vimrc
-source .functions.vimrc
+source ~/.vim/.plugins.vimrc
+source ~/.vim/.functions.vimrc
 
 syntax on
 set tabstop=2
