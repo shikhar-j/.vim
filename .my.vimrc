@@ -1,3 +1,6 @@
+source .plugins.vimrc
+source .functions.vimrc
+
 syntax on
 set tabstop=2
 set shiftwidth=2
