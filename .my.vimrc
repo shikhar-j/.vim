@@ -26,6 +26,8 @@ set title
 
 set splitright 
 
+set foldmethod=syntax "code folding
+
 filetype plugin indent on
 colorscheme railscasts
 
@@ -48,6 +50,9 @@ set statusline+=\ %c "cursor column
 set statusline+=\ %l/%L "cursor line / total line
 set statusline+=\ %P "percentage through file
 
+"custom filetypes
+au BufNewFile,BufRead *.ejs set filetype=html
+
 "custom maps
 noremap j gj
 noremap k gk
@@ -63,3 +68,6 @@ inoremap <c-x> <esc>xi
 inoremap <c-d> <esc>ddi
 inoremap <c-u> <esc>ui
 inoremap <c-r> <esc>ri
+
+" open all folds when file is opened
+autocmd BufWinEnter * silent! :%foldopen!
