@@ -15,6 +15,7 @@ endfunction
 "uninstall a plugin
 function! UninstallPlugin(name)
   execute "!(cd ~/.vim/bundle/; git submodule deinit " . a:name . "; git rm " . a:name . "; rm -rf " . a:name . ")"
+  execute "!(cd ~/.vim/bundle/; git commit -am 'Uninstalling " . a:name . "'; git push;)"
 endfunction
 
 command! UpdatePlugins call UpdatePlugins()
