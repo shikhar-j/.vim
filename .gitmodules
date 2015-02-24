@@ -43,3 +43,6 @@
 [submodule "bundle/vim-trailing-whitespace"]
 	path = bundle/vim-trailing-whitespace
 	url = https://github.com/bronson/vim-trailing-whitespace
+[submodule "bundle/vim-wheel"]
+	path = bundle/vim-wheel
+	url = https://github.com/reedes/vim-wheel
