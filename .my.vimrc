@@ -72,5 +72,14 @@ inoremap <c-d> <esc>ddi
 inoremap <c-u> <esc>ui
 inoremap <c-r> <esc>ri
 
+"buffer maps
+noremap bn :bnext<CR>
+noremap bp :bprev<CR>
+noremap <c-b> :ls<CR>
+
+"update source file
+noremap <F6> :source ~/.vimrc<CR>
+
 " open all folds when file is opened
 autocmd BufWinEnter * silent! :%foldopen!
+autocmd BufNewFile * :write
