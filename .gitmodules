@@ -37,3 +37,6 @@
 [submodule "bundle/vim-wheel"]
 	path = bundle/vim-wheel
 	url = https://github.com/reedes/vim-wheel
+[submodule "bundle/bufexplorer.zip"]
+	path = bundle/bufexplorer.zip
+	url = https://github.com/vim-scripts/bufexplorer.zip
