@@ -28,6 +28,7 @@ set undolevels=1000
 set title
 
 set splitright 
+set mouse=a
 
 set foldmethod=syntax "code folding
 
