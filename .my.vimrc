@@ -23,11 +23,12 @@ set incsearch "search as I type
 set expandtab "insert spaces in place of tabs
 set smarttab "autoindent
 
-set history=1000 
+set history=1000
 set undolevels=1000
 set title
 
-set splitright 
+set splitright
+set hidden
 
 set foldmethod=syntax "code folding
 
@@ -75,7 +76,6 @@ inoremap <c-r> <esc>ri
 "buffer maps
 noremap bn :bnext<CR>
 noremap bp :bprev<CR>
-noremap <c-b> :ls<CR>
 
 "update source file
 noremap <F6> :source ~/.vimrc<CR>

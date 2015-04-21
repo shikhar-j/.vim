@@ -25,4 +25,12 @@ command! -nargs=1 UninstallPlugin call UninstallPlugin("<args>")
 "----------------------------------------
 "third party functions
 "----------------------------------------
+"
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
 
+noremap <leader>w :call DeleteTrailingWS()<CR>
+autocmd BufWrite *.* :call DeleteTrailingWS()
