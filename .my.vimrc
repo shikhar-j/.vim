@@ -81,7 +81,7 @@ noremap bn :bnext<CR>
 noremap bp :bprev<CR>
 
 "update source file
-noremap <F6> :source ~/.vimrc<CR>
+command! UpdateSource :source ~/.vimrc
 
 " open all folds when file is opened
 autocmd BufWinEnter * silent! :%foldopen!
