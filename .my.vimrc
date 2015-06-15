@@ -54,6 +54,9 @@ set statusline+=\ %c "cursor column
 set statusline+=\ %l/%L "cursor line / total line
 set statusline+=\ %P "percentage through file
 
+" ruby path when using rvm
+let g:ruby_path = system('rvm current')
+
 "custom filetypes
 au BufNewFile,BufRead *.ejs set filetype=html
 
