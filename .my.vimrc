@@ -57,6 +57,12 @@ set statusline+=\ %P "percentage through file
 " ruby path when using rvm
 let g:ruby_path = system('rvm current')
 
+" ctrlp
+" install the_silver_searcher (brew install the_silver_searcher)
+if executable("ag")
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 "custom filetypes
 au BufNewFile,BufRead *.ejs set filetype=html
 
