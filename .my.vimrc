@@ -57,14 +57,21 @@ set statusline+=\ %P "percentage through file
 " ruby path when using rvm
 let g:ruby_path = system('rvm current')
 
-" ctrlp
-" install the_silver_searcher (brew install the_silver_searcher)
-if executable("ag")
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
+" ctrlp settings
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 "custom filetypes
 au BufNewFile,BufRead *.ejs set filetype=html
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
 
 "custom maps
 noremap j gj
