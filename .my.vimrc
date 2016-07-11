@@ -2,12 +2,15 @@ source ~/.vim/.plugins.vimrc
 source ~/.vim/.functions.vimrc
 
 syntax on
+set synmaxcol=180
 set tabstop=2
 set shiftwidth=2
 set shiftround
 
 set cursorline
 set number
+set scrolljump=5
+set lazyredraw
 
 set smartcase
 set backspace=indent,eol,start
