@@ -10,12 +10,16 @@ set shiftround
 set cursorline
 set number
 set scrolljump=5
+
 set lazyredraw
+set ttyfast
 
 set smartcase
 set backspace=indent,eol,start
 set autoindent
 set copyindent
+
+set regexpengine=1
 
 set showmatch "show matching bracket
 set ignorecase "ignore case when searching
@@ -32,8 +36,6 @@ set title
 
 set splitright
 set hidden
-
-set foldmethod=syntax "code folding
 
 filetype plugin indent on
 colorscheme railscasts
