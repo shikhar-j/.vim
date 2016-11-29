@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/shikharjaiswal/Dropbox/Own Projects/Dropbox-Airport-Sync/lib/airport_sync'
 let g:netrw_dirhist_2='/Users/shikharjaiswal/Dropbox/_Projects/Source Files/2015/Sohail Md Portfolio/portfolio/src'
 let g:netrw_dirhist_3='/Users/shikharjaiswal/Google Drive/shikhar'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/shikharjaiswal/Desktop/HackerRank/app/controllers'
 let g:netrw_dirhist_6='/Users/shikharjaiswal/Desktop/HackerRank/app/controllers/api'
 let g:netrw_dirhist_7='/Users/shikharjaiswal/Desktop/HackerRank/app/controllers'
 let g:netrw_dirhist_8='/Users/shikharjaiswal/Desktop/workspace/HackerRank/db'
+let g:netrw_dirhist_9='/Users/shikhar/.vim'
